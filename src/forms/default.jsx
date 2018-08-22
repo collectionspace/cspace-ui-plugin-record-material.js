@@ -66,6 +66,17 @@ const template = (configContext) => {
           </Col>
         </Row>
 
+        <InputTable name="discontinued">
+          <Field name="discontinued" />
+          <Field name="discontinuedBy" />
+          <Field name="discontinuedYear" />
+        </InputTable>
+
+        <Row>
+          <Field name="productionYear" />
+          <Field name="productionNote" />
+        </Row>
+
         <Field name="materialProductionOrganizationGroupList">
           <Field name="materialProductionOrganizationGroup">
             <Field name="materialProductionOrganization" />
@@ -193,8 +204,6 @@ const template = (configContext) => {
         <Field name="hygrothermalPropertyGroupList">
           <Field name="hygrothermalPropertyGroup">
             <Field name="hygrothermalPropertyType" />
-            <Field name="hygrothermalPropertyUnit" />
-            <Field name="hygrothermalPropertyValue" />
             <Field name="hygrothermalPropertyNote" />
           </Field>
         </Field>
@@ -202,8 +211,6 @@ const template = (configContext) => {
         <Field name="mechanicalPropertyGroupList">
           <Field name="mechanicalPropertyGroup">
             <Field name="mechanicalPropertyType" />
-            <Field name="mechanicalPropertyUnit" />
-            <Field name="mechanicalPropertyValue" />
             <Field name="mechanicalPropertyNote" />
           </Field>
         </Field>
@@ -243,6 +250,7 @@ const template = (configContext) => {
         <Field name="recycledContentGroupList">
           <Field name="recycledContentGroup">
             <Field name="recycledContent" />
+            <Field name="recycledContentHigh" />
             <Field name="recycledContentQualifier" />
           </Field>
         </Field>
@@ -257,6 +265,7 @@ const template = (configContext) => {
         <Field name="embodiedEnergyGroupList">
           <Field name="embodiedEnergyGroup">
             <Field name="embodiedEnergyValue" />
+            <Field name="embodiedEnergyValueHigh" />
             <Field name="embodiedEnergyUnit" />
             <Field name="embodiedEnergyNote" />
           </Field>

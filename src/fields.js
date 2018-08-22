@@ -21,6 +21,7 @@ export default (configContext) => {
     DATA_TYPE_BOOL,
     DATA_TYPE_DATE,
     DATA_TYPE_FLOAT,
+    DATA_TYPE_INT,
   } = configContext.dataTypes;
 
   const {
@@ -455,6 +456,90 @@ export default (configContext) => {
                 props: {
                   source: 'materialuse',
                 },
+              },
+            },
+          },
+        },
+        discontinued: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.materials_common.discontinued.name',
+                defaultMessage: 'Discontinued',
+              },
+            }),
+            view: {
+              type: OptionPickerInput,
+              props: {
+                source: 'yesNoValues',
+              },
+            },
+          },
+        },
+        discontinuedBy: {
+          [config]: {
+            messages: defineMessages({
+              fullName: {
+                id: 'field.materials_common.discontinuedBy.fullName',
+                defaultMessage: 'Discontinued by',
+              },
+              name: {
+                id: 'field.materials_common.discontinuedBy.name',
+                defaultMessage: 'By',
+              },
+            }),
+            view: {
+              type: AutocompleteInput,
+              props: {
+                source: 'organization/local,organization/shared',
+              },
+            },
+          },
+        },
+        discontinuedYear: {
+          [config]: {
+            dataType: DATA_TYPE_INT,
+            messages: defineMessages({
+              fullName: {
+                id: 'field.materials_common.discontinuedYear.fullName',
+                defaultMessage: 'Discontinued year',
+              },
+              name: {
+                id: 'field.materials_common.discontinuedYear.name',
+                defaultMessage: 'Year',
+              },
+            }),
+            view: {
+              type: TextInput,
+            },
+          },
+        },
+        productionYear: {
+          [config]: {
+            dataType: DATA_TYPE_INT,
+            messages: defineMessages({
+              name: {
+                id: 'field.materials_common.productionYear.name',
+                defaultMessage: 'Production year',
+              },
+            }),
+            view: {
+              type: TextInput,
+            },
+          },
+        },
+        productionNote: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.materials_common.productionNote.name',
+                defaultMessage: 'Production note',
+              },
+            }),
+            view: {
+              type: TextInput,
+              props: {
+                multiline: true,
               },
             },
           },
@@ -1927,11 +2012,29 @@ export default (configContext) => {
                 messages: defineMessages({
                   fullName: {
                     id: 'field.materials_common.recycledContent.fullName',
-                    defaultMessage: 'Recycled content %',
+                    defaultMessage: 'Recycled content % - low',
                   },
                   name: {
                     id: 'field.materials_common.recycledContent.name',
-                    defaultMessage: 'Content %',
+                    defaultMessage: 'Content % - low',
+                  },
+                }),
+                view: {
+                  type: TextInput,
+                },
+              },
+            },
+            recycledContentHigh: {
+              [config]: {
+                dataType: DATA_TYPE_FLOAT,
+                messages: defineMessages({
+                  fullName: {
+                    id: 'field.materials_common.recycledContentHigh.fullName',
+                    defaultMessage: 'Recycled content % - high',
+                  },
+                  name: {
+                    id: 'field.materials_common.recycledContentHigh.name',
+                    defaultMessage: 'Content % - high',
                   },
                 }),
                 view: {
@@ -2050,11 +2153,29 @@ export default (configContext) => {
                 messages: defineMessages({
                   fullName: {
                     id: 'field.materials_common.embodiedEnergyValue.fullName',
-                    defaultMessage: 'Embodied energy value',
+                    defaultMessage: 'Embodied energy value - low',
                   },
                   name: {
                     id: 'field.materials_common.embodiedEnergyValue.name',
-                    defaultMessage: 'Value',
+                    defaultMessage: 'Value - low',
+                  },
+                }),
+                view: {
+                  type: TextInput,
+                },
+              },
+            },
+            embodiedEnergyValueHigh: {
+              [config]: {
+                dataType: DATA_TYPE_FLOAT,
+                messages: defineMessages({
+                  fullName: {
+                    id: 'field.materials_common.embodiedEnergyValueHigh.fullName',
+                    defaultMessage: 'Embodied energy value - high',
+                  },
+                  name: {
+                    id: 'field.materials_common.embodiedEnergyValueHigh.name',
+                    defaultMessage: 'Value - high',
                   },
                 }),
                 view: {

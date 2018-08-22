@@ -44,5 +44,9 @@ export default {
       id: 'inputTable.material.termSource',
       defaultMessage: 'Source',
     },
+    discontinued: {
+      id: 'inputTable.material.discontinued',
+      defaultMessage: 'Discontinued',
+    },
   }),
 };
