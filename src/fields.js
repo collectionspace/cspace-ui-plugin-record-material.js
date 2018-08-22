@@ -923,7 +923,7 @@ export default (configContext) => {
               messages: defineMessages({
                 name: {
                   id: 'field.materials_common.additionalResourceGroup.name',
-                  defaultMessage: 'Additional resource',
+                  defaultMessage: 'External standard',
                 },
               }),
               repeating: true,
@@ -939,7 +939,7 @@ export default (configContext) => {
                 messages: defineMessages({
                   fullName: {
                     id: 'field.materials_common.additionalResource.fullName',
-                    defaultMessage: 'Additional resource name',
+                    defaultMessage: 'External standard name',
                   },
                   name: {
                     id: 'field.materials_common.additionalResource.name',
@@ -959,7 +959,7 @@ export default (configContext) => {
                 messages: defineMessages({
                   fullName: {
                     id: 'field.materials_common.additionalResourceNote.fullName',
-                    defaultMessage: 'Additional resource note',
+                    defaultMessage: 'External standard note',
                   },
                   name: {
                     id: 'field.materials_common.additionalResourceNote.name',
@@ -984,7 +984,7 @@ export default (configContext) => {
               messages: defineMessages({
                 name: {
                   id: 'field.materials_common.materialTermAttributionContributingGroup.name',
-                  defaultMessage: 'Term attribution contributor',
+                  defaultMessage: 'Term creator',
                 },
               }),
               repeating: true,
@@ -1000,7 +1000,7 @@ export default (configContext) => {
                 messages: defineMessages({
                   fullName: {
                     id: 'field.materials_common.materialTermAttributionContributingOrganization.fullName',
-                    defaultMessage: 'Term attribution contributor organization',
+                    defaultMessage: 'Term creator organization',
                   },
                   name: {
                     id: 'field.materials_common.materialTermAttributionContributingOrganization.name',
@@ -1020,7 +1020,7 @@ export default (configContext) => {
                 messages: defineMessages({
                   fullName: {
                     id: 'field.materials_common.materialTermAttributionContributingPerson.fullName',
-                    defaultMessage: 'Term attribution contributor',
+                    defaultMessage: 'Term creator contributor',
                   },
                   name: {
                     id: 'field.materials_common.materialTermAttributionContributingPerson.name',
@@ -1041,7 +1041,7 @@ export default (configContext) => {
                 messages: defineMessages({
                   fullName: {
                     id: 'field.materials_common.materialTermAttributionContributingDate.fullName',
-                    defaultMessage: 'Term attribution contributor date',
+                    defaultMessage: 'Term creator date',
                   },
                   name: {
                     id: 'field.materials_common.materialTermAttributionContributingDate.name',
@@ -1066,7 +1066,7 @@ export default (configContext) => {
               messages: defineMessages({
                 name: {
                   id: 'field.materials_common.materialTermAttributionEditingGroup.name',
-                  defaultMessage: 'Term attribution editor',
+                  defaultMessage: 'Term editor',
                 },
               }),
               repeating: true,
@@ -1082,7 +1082,7 @@ export default (configContext) => {
                 messages: defineMessages({
                   fullName: {
                     id: 'field.materials_common.materialTermAttributionEditingOrganization.fullName',
-                    defaultMessage: 'Term attribution editor organization',
+                    defaultMessage: 'Term editor organization',
                   },
                   name: {
                     id: 'field.materials_common.materialTermAttributionEditingOrganization.name',
@@ -1102,7 +1102,7 @@ export default (configContext) => {
                 messages: defineMessages({
                   fullName: {
                     id: 'field.materials_common.materialTermAttributionEditingPerson.fullName',
-                    defaultMessage: 'Term attribution editor',
+                    defaultMessage: 'Term editor',
                   },
                   name: {
                     id: 'field.materials_common.materialTermAttributionEditingPerson.name',
@@ -1122,7 +1122,7 @@ export default (configContext) => {
                 messages: defineMessages({
                   fullName: {
                     id: 'field.materials_common.materialTermAttributionEditingNote.fullName',
-                    defaultMessage: 'Term attribution editor note',
+                    defaultMessage: 'Term editor note',
                   },
                   name: {
                     id: 'field.materials_common.materialTermAttributionEditingNote.name',
@@ -1140,7 +1140,7 @@ export default (configContext) => {
                 messages: defineMessages({
                   fullName: {
                     id: 'field.materials_common.materialTermAttributionEditingDate.fullName',
-                    defaultMessage: 'Term attribution editor date',
+                    defaultMessage: 'Term editor date',
                   },
                   name: {
                     id: 'field.materials_common.materialTermAttributionEditingDate.name',
