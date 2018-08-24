@@ -69,11 +69,11 @@ const template = (configContext) => {
         <InputTable name="discontinued">
           <Field name="discontinued" />
           <Field name="discontinuedBy" />
-          <Field name="discontinuedYear" />
+          <Field name="discontinuedDate" />
         </InputTable>
 
         <Row>
-          <Field name="productionYear" />
+          <Field name="productionDate" />
           <Field name="productionNote" />
         </Row>
 

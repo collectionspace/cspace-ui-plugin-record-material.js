@@ -8,6 +8,7 @@ export default (configContext) => {
     DateInput,
     HierarchyInput,
     OptionPickerInput,
+    StructuredDateInput,
     TextInput,
     TermPickerInput,
     URLInput,
@@ -21,7 +22,7 @@ export default (configContext) => {
     DATA_TYPE_BOOL,
     DATA_TYPE_DATE,
     DATA_TYPE_FLOAT,
-    DATA_TYPE_INT,
+    DATA_TYPE_STRUCT_DATE,
   } = configContext.dataTypes;
 
   const {
@@ -496,37 +497,39 @@ export default (configContext) => {
             },
           },
         },
-        discontinuedYear: {
+        discontinuedDate: {
           [config]: {
-            dataType: DATA_TYPE_INT,
+            dataType: DATA_TYPE_STRUCT_DATE,
             messages: defineMessages({
               fullName: {
-                id: 'field.materials_common.discontinuedYear.fullName',
-                defaultMessage: 'Discontinued year',
+                id: 'field.materials_common.discontinuedDate.fullName',
+                defaultMessage: 'Discontinued date',
               },
               name: {
-                id: 'field.materials_common.discontinuedYear.name',
-                defaultMessage: 'Year',
+                id: 'field.materials_common.discontinuedDate.name',
+                defaultMessage: 'Date',
               },
             }),
             view: {
-              type: TextInput,
+              type: StructuredDateInput,
             },
           },
+          ...extensions.structuredDate.fields,
         },
-        productionYear: {
+        productionDate: {
           [config]: {
-            dataType: DATA_TYPE_INT,
+            dataType: DATA_TYPE_STRUCT_DATE,
             messages: defineMessages({
               name: {
-                id: 'field.materials_common.productionYear.name',
-                defaultMessage: 'Production year',
+                id: 'field.materials_common.productionDate.name',
+                defaultMessage: 'Production date',
               },
             }),
             view: {
-              type: TextInput,
+              type: StructuredDateInput,
             },
           },
+          ...extensions.structuredDate.fields,
         },
         productionNote: {
           [config]: {
