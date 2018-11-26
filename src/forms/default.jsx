@@ -48,6 +48,16 @@ const template = (configContext) => {
           </Field>
         </Field>
 
+        <Cols>
+          <Col>
+            <Field name="publishToList">
+              <Field name="publishTo" />
+            </Field>
+          </Col>
+
+          <Col />
+        </Cols>
+
         <Field name="materialCompositionGroupList">
           <Field name="materialCompositionGroup">
             <Field name="materialCompositionFamilyName" />

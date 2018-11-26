@@ -349,6 +349,31 @@ export default (configContext) => {
             },
           },
         },
+        publishToList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          publishTo: {
+            [config]: {
+              defaultValue: 'urn:cspace:core.collectionspace.org:vocabularies:name(publishto):item:name(none)\'None\'',
+              messages: defineMessages({
+                name: {
+                  id: 'field.materials_common.publishTo.name',
+                  defaultMessage: 'Publish to',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: TermPickerInput,
+                props: {
+                  source: 'publishto',
+                },
+              },
+            },
+          },
+        },
         materialCompositionGroupList: {
           [config]: {
             view: {
