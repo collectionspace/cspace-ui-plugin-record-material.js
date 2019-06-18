@@ -13,6 +13,11 @@ export default {
         description: 'The name of a collection of records from the vocabulary.',
         defaultMessage: 'All Materials',
       },
+      itemName: {
+        id: 'vocab.material.all.itemName',
+        description: 'The name of a record from the vocabulary.',
+        defaultMessage: 'Material',
+      },
     }),
     serviceConfig: {
       servicePath: '_ALL_',
@@ -30,6 +35,11 @@ export default {
         id: 'vocab.material.local.collectionName',
         description: 'The name of a collection of records from the vocabulary.',
         defaultMessage: 'Local Materials',
+      },
+      itemName: {
+        id: 'vocab.material.local.itemName',
+        description: 'The name of a record from the vocabulary.',
+        defaultMessage: 'Local Material',
       },
     }),
     serviceConfig: {
