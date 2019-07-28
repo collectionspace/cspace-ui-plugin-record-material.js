@@ -38,6 +38,15 @@ const template = (configContext) => {
           subpath={['ns2:materials_common', 'materialCompositionGroupList', 'materialCompositionGroup', 0]}
         />
       </Row>
+
+      <Field
+        name="0"
+        repeating={false}
+        subpath={['ns2:materials_common', 'materialProductionOrganizationGroupList', 'materialProductionOrganizationGroup']}
+        tabular={false}
+      >
+        <Field name="materialProductionOrganization" label={null} />
+      </Field>
     </Field>
   );
 };
