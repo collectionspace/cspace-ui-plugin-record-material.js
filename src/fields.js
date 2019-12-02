@@ -22,7 +22,7 @@ export default (configContext) => {
     DATA_TYPE_BOOL,
     DATA_TYPE_DATE,
     DATA_TYPE_FLOAT,
-    DATA_TYPE_STRUCT_DATE,
+    DATA_TYPE_STRUCTURED_DATE,
   } = configContext.dataTypes;
 
   const {
@@ -79,21 +79,57 @@ export default (configContext) => {
         csid: {
           [config]: {
             cloneable: false,
+            messages: defineMessages({
+              name: {
+                id: 'field.materials_common.csid.name',
+                defaultMessage: 'System CSID',
+              },
+            }),
+            view: {
+              type: TextInput,
+            },
           },
         },
         inAuthority: {
           [config]: {
             cloneable: false,
+            messages: defineMessages({
+              name: {
+                id: 'field.materials_common.inAuthority.name',
+                defaultMessage: 'System authority CSID',
+              },
+            }),
+            view: {
+              type: TextInput,
+            },
           },
         },
         refName: {
           [config]: {
             cloneable: false,
+            messages: defineMessages({
+              name: {
+                id: 'field.materials_common.refName.name',
+                defaultMessage: 'System ref name',
+              },
+            }),
+            view: {
+              type: TextInput,
+            },
           },
         },
         shortIdentifier: {
           [config]: {
             cloneable: false,
+            messages: defineMessages({
+              name: {
+                id: 'field.materials_common.shortIdentifier.name',
+                defaultMessage: 'System short ID',
+              },
+            }),
+            view: {
+              type: TextInput,
+            },
           },
         },
         materialTermGroupList: {
@@ -125,6 +161,10 @@ export default (configContext) => {
             termDisplayName: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.materials_common.termDisplayName.fullName',
+                    defaultMessage: 'Term display name',
+                  },
                   name: {
                     id: 'field.materials_common.termDisplayName.name',
                     defaultMessage: 'Display name',
@@ -139,6 +179,10 @@ export default (configContext) => {
             termName: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.materials_common.termName.fullName',
+                    defaultMessage: 'Term name',
+                  },
                   name: {
                     id: 'field.materials_common.termName.name',
                     defaultMessage: 'Name',
@@ -152,6 +196,10 @@ export default (configContext) => {
             termType: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.materials_common.termType.fullName',
+                    defaultMessage: 'Term type',
+                  },
                   name: {
                     id: 'field.materials_common.termType.name',
                     defaultMessage: 'Type',
@@ -188,6 +236,10 @@ export default (configContext) => {
             historicalStatus: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.materials_common.historicalStatus.fullName',
+                    defaultMessage: 'Term historical status',
+                  },
                   name: {
                     id: 'field.materials_common.historicalStatus.name',
                     defaultMessage: 'Historical status',
@@ -204,6 +256,10 @@ export default (configContext) => {
             termStatus: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.materials_common.termStatus.fullName',
+                    defaultMessage: 'Term status',
+                  },
                   name: {
                     id: 'field.materials_common.termStatus.name',
                     defaultMessage: 'Status',
@@ -220,6 +276,10 @@ export default (configContext) => {
             termQualifier: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.materials_common.termQualifier.fullName',
+                    defaultMessage: 'Term qualifier',
+                  },
                   name: {
                     id: 'field.materials_common.termQualifier.name',
                     defaultMessage: 'Qualifier',
@@ -254,6 +314,10 @@ export default (configContext) => {
               [config]: {
                 dataType: DATA_TYPE_BOOL,
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.materials_common.termPrefForLang.fullName',
+                    defaultMessage: 'Term preferred for lang',
+                  },
                   name: {
                     id: 'field.materials_common.termPrefForLang.name',
                     defaultMessage: 'Preferred for lang',
@@ -267,13 +331,17 @@ export default (configContext) => {
             termSource: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.materials_common.termSource.fullName',
+                    defaultMessage: 'Term source name',
+                  },
+                  groupName: {
+                    id: 'field.materials_common.termSource.groupName',
+                    defaultMessage: 'Source name',
+                  },
                   name: {
                     id: 'field.materials_common.termSource.name',
                     defaultMessage: 'Name',
-                  },
-                  fullName: {
-                    id: 'field.materials_common.termSource.fullName',
-                    defaultMessage: 'Source name',
                   },
                 }),
                 view: {
@@ -287,6 +355,14 @@ export default (configContext) => {
             termSourceDetail: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.materials_common.termSourceDetail.fullName',
+                    defaultMessage: 'Term source detail',
+                  },
+                  groupName: {
+                    id: 'field.materials_common.termSourceDetail.groupName',
+                    defaultMessage: 'Source detail',
+                  },
                   name: {
                     id: 'field.materials_common.termSourceDetail.name',
                     defaultMessage: 'Detail',
@@ -300,6 +376,14 @@ export default (configContext) => {
             termSourceID: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.materials_common.termSourceID.fullName',
+                    defaultMessage: 'Term source ID',
+                  },
+                  groupName: {
+                    id: 'field.materials_common.termSourceID.groupName',
+                    defaultMessage: 'Source ID',
+                  },
                   name: {
                     id: 'field.materials_common.termSourceID.name',
                     defaultMessage: 'ID',
@@ -313,6 +397,14 @@ export default (configContext) => {
             termSourceNote: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.materials_common.termSourceNote.fullName',
+                    defaultMessage: 'Term source note',
+                  },
+                  groupName: {
+                    id: 'field.materials_common.termSourceNote.groupName',
+                    defaultMessage: 'Source note',
+                  },
                   name: {
                     id: 'field.materials_common.termSourceNote.name',
                     defaultMessage: 'Note',
@@ -399,6 +491,10 @@ export default (configContext) => {
             materialCompositionFamilyName: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.materials_common.materialCompositionFamilyName.fullName',
+                    defaultMessage: 'Composition family name',
+                  },
                   name: {
                     id: 'field.materials_common.materialCompositionFamilyName.name',
                     defaultMessage: 'Family name',
@@ -415,6 +511,10 @@ export default (configContext) => {
             materialCompositionClassName: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.materials_common.materialCompositionClassName.fullName',
+                    defaultMessage: 'Composition class name',
+                  },
                   name: {
                     id: 'field.materials_common.materialCompositionClassName.name',
                     defaultMessage: 'Class name',
@@ -431,6 +531,10 @@ export default (configContext) => {
             materialCompositionGenericName: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.materials_common.materialCompositionGenericName.fullName',
+                    defaultMessage: 'Composition generic name',
+                  },
                   name: {
                     id: 'field.materials_common.materialCompositionGenericName.name',
                     defaultMessage: 'Generic name',
@@ -489,9 +593,13 @@ export default (configContext) => {
         discontinued: {
           [config]: {
             messages: defineMessages({
+              fullName: {
+                id: 'field.materials_common.discontinued.fullName',
+                defaultMessage: 'Discontinued status',
+              },
               name: {
                 id: 'field.materials_common.discontinued.name',
-                defaultMessage: 'Discontinued',
+                defaultMessage: 'Status',
               },
             }),
             view: {
@@ -524,7 +632,7 @@ export default (configContext) => {
         },
         discontinuedDate: {
           [config]: {
-            dataType: DATA_TYPE_STRUCT_DATE,
+            dataType: DATA_TYPE_STRUCTURED_DATE,
             messages: defineMessages({
               fullName: {
                 id: 'field.materials_common.discontinuedDate.fullName',
@@ -543,7 +651,7 @@ export default (configContext) => {
         },
         productionDate: {
           [config]: {
-            dataType: DATA_TYPE_STRUCT_DATE,
+            dataType: DATA_TYPE_STRUCTURED_DATE,
             messages: defineMessages({
               name: {
                 id: 'field.materials_common.productionDate.name',
@@ -850,9 +958,13 @@ export default (configContext) => {
             materialCitationSource: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.materials_common.materialCitationSource.fullName',
+                    defaultMessage: 'Citation source',
+                  },
                   name: {
                     id: 'field.materials_common.materialCitationSource.name',
-                    defaultMessage: 'Citation',
+                    defaultMessage: 'Source',
                   },
                 }),
                 view: {
@@ -868,11 +980,11 @@ export default (configContext) => {
                 messages: defineMessages({
                   fullName: {
                     id: 'field.materials_common.materialCitationSourceDetail.fullName',
-                    defaultMessage: 'Citation source detail',
+                    defaultMessage: 'Citation detail',
                   },
                   name: {
                     id: 'field.materials_common.materialCitationSourceDetail.name',
-                    defaultMessage: 'Source detail',
+                    defaultMessage: 'Detail',
                   },
                 }),
                 view: {
@@ -2040,11 +2152,11 @@ export default (configContext) => {
                 messages: defineMessages({
                   fullName: {
                     id: 'field.materials_common.recycledContent.fullName',
-                    defaultMessage: 'Recycled content % - low',
+                    defaultMessage: 'Recycled content % - Low',
                   },
                   name: {
                     id: 'field.materials_common.recycledContent.name',
-                    defaultMessage: 'Content % - low',
+                    defaultMessage: 'Content % - Low',
                   },
                 }),
                 view: {
@@ -2058,11 +2170,11 @@ export default (configContext) => {
                 messages: defineMessages({
                   fullName: {
                     id: 'field.materials_common.recycledContentHigh.fullName',
-                    defaultMessage: 'Recycled content % - high',
+                    defaultMessage: 'Recycled content % - High',
                   },
                   name: {
                     id: 'field.materials_common.recycledContentHigh.name',
-                    defaultMessage: 'Content % - high',
+                    defaultMessage: 'Content % - High',
                   },
                 }),
                 view: {
@@ -2181,11 +2293,11 @@ export default (configContext) => {
                 messages: defineMessages({
                   fullName: {
                     id: 'field.materials_common.embodiedEnergyValue.fullName',
-                    defaultMessage: 'Embodied energy value - low',
+                    defaultMessage: 'Embodied energy value - Low',
                   },
                   name: {
                     id: 'field.materials_common.embodiedEnergyValue.name',
-                    defaultMessage: 'Value - low',
+                    defaultMessage: 'Value - Low',
                   },
                 }),
                 view: {
@@ -2199,11 +2311,11 @@ export default (configContext) => {
                 messages: defineMessages({
                   fullName: {
                     id: 'field.materials_common.embodiedEnergyValueHigh.fullName',
-                    defaultMessage: 'Embodied energy value - high',
+                    defaultMessage: 'Embodied energy value - High',
                   },
                   name: {
                     id: 'field.materials_common.embodiedEnergyValueHigh.name',
-                    defaultMessage: 'Value - high',
+                    defaultMessage: 'Value - High',
                   },
                 }),
                 view: {
