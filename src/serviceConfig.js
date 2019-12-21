@@ -6,7 +6,7 @@ export default {
   objectName: 'Materialitem',
   documentName: 'materials',
 
-  quickAddData: values => ({
+  quickAddData: (values) => ({
     document: {
       'ns2:materials_common': {
         '@xmlns:ns2': 'http://collectionspace.org/services/material',
