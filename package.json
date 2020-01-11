@@ -1,6 +1,6 @@
 {
   "name": "cspace-ui-plugin-record-material",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "Material record plugin for the CollectionSpace UI",
   "author": "Ray Lee <ray.lee@lyrasis.org>",
   "license": "ECL-2.0",
