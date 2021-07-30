@@ -48,6 +48,13 @@ const template = (configContext) => {
           </Field>
         </Field>
 
+        <Field name="featuredCollectionGroupList">
+          <Field name="featuredCollectionGroup">
+            <Field name="featuredCollection" />
+            <Field name="featuredCollectionNote" />
+          </Field>
+        </Field>
+
         <Cols>
           <Col>
             <Field name="publishToList">
