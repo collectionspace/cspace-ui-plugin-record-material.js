@@ -878,6 +878,67 @@ export default (configContext) => {
             },
           },
         },
+        featuredCollectionGroupList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          featuredCollectionGroup: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.materials_common.featuredCollectionGroup.name',
+                  defaultMessage: 'Featured collection',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: CompoundInput,
+                props: {
+                  tabular: true,
+                },
+              },
+            },
+            featuredCollection: {
+              [config]: {
+                messages: defineMessages({
+                  fullName: {
+                    id: 'field.materials_common.featuredCollection.fullName',
+                    defaultMessage: 'Featured collection name',
+                  },
+                  name: {
+                    id: 'field.materials_common.featuredCollection.name',
+                    defaultMessage: 'Name',
+                  },
+                }),
+                view: {
+                  type: AutocompleteInput,
+                  props: {
+                    source: 'work/local,work/shared',
+                  },
+                },
+              },
+            },
+            featuredCollectionNote: {
+              [config]: {
+                messages: defineMessages({
+                  fullName: {
+                    id: 'field.materials_common.featuredCollectionNote.fullName',
+                    defaultMessage: 'Featured collection note',
+                  },
+                  name: {
+                    id: 'field.materials_common.featuredCollectionNote.name',
+                    defaultMessage: 'Note',
+                  },
+                }),
+                view: {
+                  type: TextInput,
+                },
+              },
+            },
+          },
+        },
         materialCitationGroupList: {
           [config]: {
             view: {
