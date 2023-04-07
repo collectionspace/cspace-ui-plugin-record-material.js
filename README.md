@@ -3,7 +3,6 @@
 [![npm package](https://img.shields.io/npm/v/cspace-ui-plugin-record-material.svg)](https://www.npmjs.com/package/cspace-ui-plugin-record-material)
 [![continuous integration](https://github.com/collectionspace/cspace-ui-plugin-record-material.js/actions/workflows/ci-js.yml/badge.svg?branch=master&event=push)](https://github.com/collectionspace/cspace-ui-plugin-record-material.js/actions/workflows/ci-js.yml)
 
-
 Material record plugin for the CollectionSpace UI.
 
 ## Installation
